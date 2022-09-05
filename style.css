@@ -646,7 +646,6 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
-@charset "UTF-8";
 @font-face {
   font-family: 'TT Lakes';
   src: url(./fonts/TTLakes-Bold.eot);
@@ -1094,6 +1093,7 @@ button.swiper-pagination-bullet {
       line-height: 20px; } }
 
 .description__read-more-button {
+  margin-left: 10px;
   border: none;
   cursor: pointer;
   text-align: left;
@@ -1121,26 +1121,32 @@ button.swiper-pagination-bullet {
     content: "";
     display: block;
     position: absolute;
-    left: 24px;
+    left: 10px;
     background: url(./static/readmore-icon.svg) no-repeat center;
     height: 24px;
     width: 24px;
     z-index: 1; }
+    @media (min-width: 768px) {
+      .read-more-button--show-all::before {
+        left: 24px; } }
     @media (min-width: 1366px) {
       .read-more-button--show-all::before {
-        left: 344px; } }
+        left: 360px; } }
   .read-more-button--hide::before {
     content: "";
     display: block;
     position: absolute;
-    left: 24px;
+    left: 10px;
     background: url(./static/hideicon.svg) no-repeat center;
     height: 24px;
     width: 24px;
     z-index: 1; }
+    @media (min-width: 768px) {
+      .read-more-button--hide::before {
+        left: 24px; } }
     @media (min-width: 1366px) {
       .read-more-button--hide::before {
-        left: 344px; } }
+        left: 360px; } }
 
 .swiper-slide {
   display: flex;
